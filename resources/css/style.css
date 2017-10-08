@@ -20,7 +20,7 @@ h2 {
 }
 
 p {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	color: #404040;
 	line-height: 1.2;
 	padding-bottom: 1em;
@@ -33,6 +33,9 @@ a {
 	font-size: 1.25em;
 }
 
+.center {
+	text-align: center;
+}
 /* Header/Navigation */
 header {
 	display: flex;
@@ -125,10 +128,10 @@ nav a:hover {
 	align-items: center;
 }
 
-#banner img, #sectiontwo img  {
+#banner img {
 	border: 2px solid yellow;
 	margin: 2em 1.5em;
-	width: 60%;
+	width: 57%;
 
 }
 
@@ -167,6 +170,12 @@ nav a:hover {
 
 }
 
+#sectiontwo img {
+	border: 2px solid green;
+	margin: 2em 1.5em;
+	width: 100%;
+}
+
 #columnone {
 	display: flex;
 	flex-direction: column;
@@ -178,7 +187,7 @@ nav a:hover {
 }
 
 #columnone h1  {
-	padding-left: 1em;
+	padding-left: 0.75em;
 }
 
 #columnone p {
@@ -188,7 +197,6 @@ nav a:hover {
 #columnone p.caption {
 	font-family: Helvetica, sans-serif;
 	font-size: 1.25em;
-	padding-left: 2em;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -200,6 +208,7 @@ nav a:hover {
 	border-left: 1px solid #d3d3d3;
 	justify-content: space-around;
 	margin-left: 4em;
+	padding-bottom: 2em;
 }
 
 #columntwo .block {
@@ -225,6 +234,44 @@ nav a:hover {
 }
 
 /* Block Three - Courses */
+
+#sectionthree {
+	background-color: #d3d3d3;
+	border: 2px solid blue;
+	display: flex;
+
+}
+
+#allcontainers {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid purple;
+	width: 100%;
+	margin: 2em 4.5em;
+}
+
+.container {
+	border: 2px solid orange;
+	background-color: white;
+	margin: 2em 1em;
+	justify-content: space-between;
+
+}
+
+.container img {
+	height: auto;
+	width: 100%;
+}
+
+.rowone {
+	display: flex;
+	border: 2px solid black;
+}
+
+.rowtwo {
+	display: flex;
+	border: 2px solid olive;
+}
 
 /* Block Four - Courses */
 
