@@ -3,14 +3,15 @@
 <head>
   <link rel="stylesheet" href="./resources/css/reset.css">
   <link rel="stylesheet" href="./resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
   <header>
-      <div class="logo">
+      <div id="logo">
         <img src ="./resources/images/ic-logo.svg">
-        <h1>COLMAR</h1>
-        <h2>ACADEMY</h2>
+        <h1 class="desktop">COLMAR</h1>
+        <h2 class="desktop">ACADEMY</h2>
       </div> <!-- close logo-->
     <nav class="desktop">
       <ul>
@@ -29,11 +30,11 @@
        </nav>
   </header>
   <!-- Block one / Banner-->
-  <div class="section banner">
-    <div class="bannerimage">
-      <img src="https://i.imgur.com/IHWhHHS.jpg">
-    </div> <!-- close image -->
-    <div class="jambatron">
+  <div id="banner">
+
+      <img src="./resources/images/banner.jpg">
+
+    <div id="jambatron">
       <h1>Learn something new everyday </h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
        <div class ="bannerbutton">
@@ -43,29 +44,33 @@
   </div> <!-- close section banner -->
 
   <!-- Block Two /Keep Practicing -->
-  <div class="sectiontwo">
-    <div class="columnone">
-    <img src="https://i.imgur.com/W3ZH2Az.jpg">
+  <div id="sectiontwo">
+
+    <div id="columnone">
+    	<img  src="./resources/images/information-main.jpg">
       <h1> It doesn't hurt to keep practicing </h1>
       <p>"Curabitur vitae libero in ipsum portitor consequat. Alquam et commodo lectus, net consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula." </p>
       <p class="caption">Emanuel, Sr. Strategist at Hiring.com</p>
     </div> <!-- columnone -->
-    <div class="columtwo">
+    <div id="columtwo">
      <div class="blockone">
-       <img src="https://i.imgur.com/v3sDCae.jpg">
+       <img class="desktop" src="./resources/images/information-orientation.jpg">
+       <img class="mobile" src="./resources/images/information-orientation-mobile.jpg">
        <h1>Orientation date</h1>
        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
        <span class="ReadMore"><a href="#">Read more</a></span>
      </div> <!-- blocktwo -->
       <div class="blocktwo">
-       <img src="https://i.imgur.com/WXcGpt0.jpg">
+       <img class="desktop" src="./resources/images/information-campus.jpg">
+       <img class="mobile" src="./resources/images/information-campus-mobile.jpg">
        <h1>Our Campus</h1>
         <p>Find Which campus is close by you</p>
        <span class="ReadMore"><a href="#">Read more</a></span>
      </div> <!-- blocktwo -->
        </div> <!-- blocktwo -->
       <div class="blockthree">
-       <img src="">
+       <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
+       <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
        <h1>Our guest lecture</h1>
         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
        <span class="ReadMore"><a href="#">Read more</a></span>
@@ -77,19 +82,19 @@
   <div class="sectionthree">
     <div class="rowone">
       <div class="container one">
-      <img src="">
+      <img src="./resources/images/course-software.jpg">
       <h1>Software engineering</h1>
       <p class="courses">COURSES</p>
       <p> Web Development, Mobile Development, iOT, APIs</p>
     </div> <!-- containerone -->
     <div class="container two">
-      <img src="">
+      <img src="resources/images/course-computer-art.jpg">
       <h1>Computer art</h1>
       <p class="courses">COURSES</p>
       <p> Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
     </div> <!-- containertwo -->
       <div class="container three">
-      <img src="">
+      <img src="resources/images/course-design.jpg">
       <h1>Design</h1>
       <p class="courses">COURSES</p>
       <p> User Experience Design, User Reserach Visual Design</p>
@@ -97,19 +102,19 @@
     </div> <!-- rowone -->
      <div class="rowtwo">
       <div class="container one">
-      <img src="">
+      <img src="resources/images/course-data.jpg">
       <h1>Data</h1>
       <p class="courses">COURSES</p>
       <p> Data Science, Big Data, SQL, Data Visualization</p>
     </div> <!-- containerone -->
     <div class="container two">
-      <img src="">
+      <img src="resources/images/course-business.jpg">
       <h1>Business</h1>
       <p class="courses">COURSES</p>
       <p> Product Development, Business Development, Startup</p>
     </div> <!-- containertwo -->
       <div class="container three">
-      <img src="">
+      <img src="resources/images/course-marketing.jpg">
       <h1>Marketing</h1>
       <p class="courses">COURSES</p>
       <p> Analytics, Content Marketing, Mobile Marketing</p>
@@ -119,27 +124,26 @@
   <!-- Block four / Thesis Exhibit -->
   <div class="thesis">
     <div class="thesiscontainer_columnone">
-    <iframe src="">
+    <iframe src="resources/videos/thesis.mp4">
+     </iframe>
       <h1>Reimbagine urban</h1>
       <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commod lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, trisque  ligula."
       </div> <!-- thesiscontainer_columnone -->
       <div class="thesiscontainer_columntwo">
         <div class="thesiscontainer_blockone">
-         <img src="">
+         <img src="resources/images/thesis-fisma.jpg">
           <h1> Fisma: Design and Prototype</h1>
           <p> Designer showcase of new prototype product</p>
         </div> <!--thesiscontainer_blockone -->
         <div class="thesiscontainer_blocktwo">
-         <img src="">
+         <img src="resources/images/thesis-now-and-then.jpg">
           <h1> Now and then</h1>
           <p> Research study about New York</p>
         </div> <!--thesiscontainer_blockone -->
       </div> <!-- thesis container_columntwo -->
   </div> <!--thesis-->
     <footer>
-      <div class="copyright">
-        <span>© 2016 Colmar Academy. All rights reserved</span>
-      </div> <!--copyright-->
+      <div class="copyright"><span>© 2016 Colmar Academy. All rights reserved</span></div> <!--copyright-->
       <div class="footernav">
         <ul>
           <li>Terms</li>
