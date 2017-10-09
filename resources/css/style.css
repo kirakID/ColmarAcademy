@@ -58,7 +58,7 @@ header {
 
 #logo img {
 	display: flex;
-	height: 2em;
+	height: 3em;
 	
 }
 
@@ -99,17 +99,14 @@ nav a:hover {
 /* Block one - Banner / Jambatron */
 
 #banner {
-	border: 2px solid green;
 	background-color: #d3d3d3;
 	display: flex;
 	align-items: center;
 }
 
 #banner img {
-	border: 2px solid yellow;
 	margin: 2em 1.5em;
 	width: 57%;
-	
 }
 
 #jambatron {
@@ -127,13 +124,18 @@ nav a:hover {
 .bannerbutton {
 	background-color: #404040;
 	color: white;
-	padding: 0.75em 7em;
-	
+	padding: 0.75em;
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .bannerbutton span {
+	display: flex;
 	font-size: 1.25em;
 	font-weight: lighter;
+	
 }
 
 .bannerbutton:hover {
@@ -143,12 +145,10 @@ nav a:hover {
 
 /* Block Two - Keep Practicing */
 #sectiontwo {
-	border: 2px solid maroon;
 	display: flex;	
 }
 
 #sectiontwo img {
-	border: 2px solid green;
 	margin: 2em 1.5em;
 	width: 100%;
 }
@@ -175,7 +175,7 @@ nav a:hover {
 	font-family: Helvetica, sans-serif;
 	font-size: 1.25em;
 	padding-top: 0;
-	padding-bottom: 0;
+	padding-bottom: 1em;
 }
 
 #columntwo {
@@ -215,7 +215,6 @@ nav a:hover {
 
 #sectionthree {
 	background-color: #d3d3d3;
-	border: 2px solid blue;
 	display: flex;
 	
 }
@@ -260,7 +259,6 @@ nav a:hover {
 
 /* Block Four - Thesis */
 #thesis {
-	border: 2px solid gold;
 	display: flex;	
 	flex-direction: column;
 }
@@ -331,7 +329,7 @@ nav a:hover {
 footer {
 	display: flex;
 	border-top: 1px solid #d3d3d3;
-	margin-left: 1.5em;
+	
 	margin-top: 1em;
 }
 
@@ -341,6 +339,7 @@ footer p {
 
 .copyright {
 	flex-grow: 1;
+	margin-left: 1.5em;
 }
 
 footer ul {
@@ -350,6 +349,57 @@ footer ul {
 footer li {
 	margin-right: 1em;
 }
+
+	@media  only screen and (min-width: 481px) and (max-width : 810px) {
+/* General */
+	html {
+			font-size: 12px;
+		}
+
+
+/* Header/Navigation */
+	nav.desktop, nav span {
+			display: none;
+		}
+
+	nav.mobile {
+		display: inline-flex;
+		width: 100%;
+	}
+	
+	nav.mobile img {
+		display: inline-flex;
+		padding: 1em;
+	}
+	
+	nav ul {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+		
+		nav.mobile img:hover .hover-content {
+			display: block;
+			transition: all 1.2s ease-out 0.2s;
+		}
+
+
+/* Block one - Banner / Jambatron */
+
+	
+
+/* Block Two - Keep Practicing */
+
+	
+/* Block Three - Courses */
+	
+/* Block Four / Thesis exhibit */
+	
+	
+/* Footer */
+
+
 @media (max-width : 480px) {
 /* General */
 
@@ -364,10 +414,7 @@ footer li {
 
 /* Header/Navigation */
 
-	header {
-		border: 2px border blue;
-		
-	}
+
 	 #logo, .desktop {
 		display: none;
 	}
@@ -435,15 +482,99 @@ footer li {
 		
 	}
 /* Block Three - Courses */
-	#sectionthree h1 {
-		text-align: center;
+	#sectionthree {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+	}
+	
+	.rowone {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.rowtwo {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.container img.desktop {
+		display: none;
+	}
+	
+	.container {
+		background-color: #d3d3d3;
 	}
 	
 	#allcontainers {
-		display: block;
+		margin: 0;
 	}
 	
-	.container img {
+	/* Block Four / Thesis exhibit */
+	#thesis, #allthesiscontainer, #thesiscolumnone {
 		display: block;
 		width: 100%;
+		margin: 0;
 	}
+	
+	#thesiscolumnone video {
+		margin: 0;
+	}
+	
+	#thesiscolumntwo, #thesiscolumnone h1, #thesiscolumnone p {
+		display: none;
+	}
+	
+	/* footer */
+	footer {
+		padding-top: 1.5em;
+		border: none;
+	}
+	
+	.footernav {
+		display: none;
+	}
+	
+	.copyright {
+		margin: 0;
+		padding: 1em; 
+		display: flex;
+		align-items: flex-end;
+	}
+	
+	@media (max-width : 640px) {
+/* General */
+
+	.desktop {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+
+
+/* Header/Navigation */
+
+	
+
+
+/* Block one - Banner / Jambatron */
+
+	
+
+/* Block Two - Keep Practicing */
+
+	
+/* Block Three - Courses */
+	
+/* Block Four / Thesis exhibit */
+	
+	
+/* Footer */
+		
+
+
+
