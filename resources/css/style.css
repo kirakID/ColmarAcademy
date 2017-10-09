@@ -37,15 +37,7 @@ a {
 	text-align: center;
 }
 
-@media (max-width : 480px) {
-	.desktop {
-		display: none;
-	}
 
-	.mobile {
-		display: block;
-	}
-}
 /* Header/Navigation */
 header {
 	display: flex;
@@ -103,31 +95,6 @@ nav a:hover {
 	display: none;
 }
 
-@media (max-width : 480px) {
-	header {
-		border: 2px border blue;
-
-	}
-	 #logo, .desktop {
-		display: none;
-	}
-
-	nav.mobile {
-		display: inline-flex;
-		width: 100%;
-	}
-
-	nav.mobile img {
-		display: inline-flex;
-	}
-
-	nav ul {
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-	}
-}
-
 
 /* Block one - Banner / Jambatron */
 
@@ -173,19 +140,7 @@ nav a:hover {
 	background-color: #708c78;
 }
 
-@media (max-width : 480px) {
-	#banner {
-		display: flex;
-		flex-direction: column;
-	}
-	#banner img {
-		width: 100%
-	}
 
-	.bannerbutton {
-		margin-bottom: 2em;
-	}
-}
 /* Block Two - Keep Practicing */
 #sectiontwo {
 	border: 2px solid maroon;
@@ -255,14 +210,7 @@ nav a:hover {
 	background-color: #d3d3d3;
 }
 
-@media (max-width : 480px) {
-	#columntwo {
-	width: 100%;
 
-	}
-
-
-}
 /* Block Three - Courses */
 
 #sectionthree {
@@ -372,7 +320,7 @@ nav a:hover {
 
 .subthesiscontainer {
 	padding: 1em;
-	
+
 }
 #thesiscolumntwo .thesiscontainer:first-child {
 	background-color: #d3d3d3;
@@ -401,4 +349,88 @@ footer ul {
 
 footer li {
 	margin-right: 1em;
+}
+
+/* General */
+@media (max-width : 480px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}
+
+/* Header/Navigation */
+@media (max-width : 480px) {
+	header {
+		border: 2px border blue;
+
+	}
+	 #logo, .desktop {
+		display: none;
+	}
+
+	nav.mobile {
+		display: inline-flex;
+		width: 100%;
+	}
+
+	nav.mobile img {
+		display: inline-flex;
+	}
+
+	nav ul {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+/* Block one - Banner / Jambatron */
+@media (max-width : 480px) {
+	#banner {
+		display: flex;
+		flex-direction: column;
+	}
+	#banner img {
+		width: 100%
+	}
+
+	.bannerbutton {
+		margin-bottom: 2em;
+	}
+}
+
+/* Block Two - Keep Practicing */
+@media (max-width : 480px) {
+	#sectiontwo {
+		display: block;
+
+	}
+
+	#columntwo {
+		margin: 0;
+		width: 100%;
+	}
+
+	#columntwo .block {
+		display: flex;
+		flex-direction: column;
+		border: none;
+		align-items: flex-start;
+
+	}
+
+	#columntwo .block img {
+		width: 100%;
+		margin: 1em;
+
+	}
+
+	#columntwo .subblock {
+		margin-left: 2em;
+
+	}
 }
