@@ -358,7 +358,7 @@ footer li {
 
 
 /* Header/Navigation */
-	nav.desktop, .hover-content, #logo img {
+	nav.desktop, #logo img {
 			display: none;
 		}
 
@@ -378,13 +378,29 @@ footer li {
 		justify-content: flex-end;
 	}
 	
+	nav.mobile img, nav span {
+			transition: opacity 0.5s ease-in-out;
+		}
 		
-		nav.mobile img:hover nav.span {
-			display: block;
-			transition: all 1.2s ease-out 0.2s;
-			background-color: aqua;
+		nav span {
+			position: absolute; 
+			top: 1em;
+			left: 25em;
+			border: 2px solid aqua;
+			opacity: 0;
 		}
 
+		
+		nav.mobile img:hover {
+			opacity: 0;
+		}
+		
+
+		nav.mobile img:hover nav span {
+			opacity: 1;
+		}
+
+		
 
 /* Block one - Banner / Jambatron */
 
@@ -630,3 +646,4 @@ footer li {
 	}
 	
 }
+
