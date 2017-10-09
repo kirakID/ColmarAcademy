@@ -358,7 +358,7 @@ footer li {
 
 
 /* Header/Navigation */
-	nav.desktop, nav span {
+	nav.desktop, .hover-content, #logo img {
 			display: none;
 		}
 
@@ -379,28 +379,102 @@ footer li {
 	}
 	
 		
-		nav.mobile img:hover .hover-content {
+		nav.mobile img:hover nav.span {
 			display: block;
 			transition: all 1.2s ease-out 0.2s;
+			background-color: aqua;
 		}
 
 
 /* Block one - Banner / Jambatron */
 
+	#banner {
+		display: flex;
+		flex-direction: column;
+	}
+	#banner img {
+		width: 100%;
+	}
 	
+	.bannerbutton {
+		margin-bottom: 2em;
+	}
 
 /* Block Two - Keep Practicing */
-
 	
+	#columnone {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		}
+	
+	#sectiontwo img {
+			margin: 0;
+		}
+	
+	#columone h1 {
+		display: flex;
+		flex-wrap: wrap;
+		}
+	#sectiontwo {
+		display: block;
+	}
+	
+	#columntwo {
+		margin: 0;
+		width: 100%;
+	}
+	
+	#columntwo .block {
+		display: flex;
+		flex-direction: column;
+		border: none;
+		align-items: flex-start;
+		
+	}
+		#columntwo .desktop {
+			display: none;
+		}
+		
+		#columntwo .mobile {
+			display: block;
+		}
+	#columntwo .block img {
+		width: calc(100% - 3em);
+		margin: 1.5em;
+	
+	}
+	
+	#columntwo .subblock {
+		margin-left: 2em;
+		margin-bottom: 1em;
+		
+	}
 /* Block Three - Courses */
+		.rowone {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.rowtwo {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
 	
 /* Block Four / Thesis exhibit */
+		#allthesiscontainer {
+		display: inline-flex;
+		flex-direction: column;
+		width: 100%;
+		}
 	
 	
 /* Footer */
+}
 
-
-@media (max-width : 480px) {
+@media only screen and (max-width : 480px) {
 /* General */
 
 	.desktop {
@@ -415,7 +489,7 @@ footer li {
 /* Header/Navigation */
 
 
-	 #logo, .desktop {
+	 #logo, .desktop, nav span {
 		display: none;
 	}
 	
@@ -544,37 +618,4 @@ footer li {
 		align-items: flex-end;
 	}
 	
-	@media (max-width : 640px) {
-/* General */
-
-	.desktop {
-		display: none;
-	}
-	
-	.mobile {
-		display: block;
-	}
-
-
-/* Header/Navigation */
-
-	
-
-
-/* Block one - Banner / Jambatron */
-
-	
-
-/* Block Two - Keep Practicing */
-
-	
-/* Block Three - Courses */
-	
-/* Block Four / Thesis exhibit */
-	
-	
-/* Footer */
-		
-
-
-
+}
