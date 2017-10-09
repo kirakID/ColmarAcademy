@@ -10,7 +10,7 @@ h1 {
 	font-weight: bold;
 	color: #404040;
 	line-height: 1.3;
-
+	
 }
 
 h2 {
@@ -53,13 +53,13 @@ header {
 	flex-direction: row;
 	height: 2em;
 	align-items: center;
-
+	
 }
 
 #logo img {
 	display: flex;
 	height: 2em;
-
+	
 }
 
 #logo h1 {
@@ -78,7 +78,7 @@ header {
 nav li {
 	display: inline-flex;
 	padding-right: 1em;
-
+	
 }
 
 nav a {
@@ -109,7 +109,7 @@ nav a:hover {
 	border: 2px solid yellow;
 	margin: 2em 1.5em;
 	width: 57%;
-
+	
 }
 
 #jambatron {
@@ -128,7 +128,7 @@ nav a:hover {
 	background-color: #404040;
 	color: white;
 	padding: 0.75em 7em;
-
+	
 }
 
 .bannerbutton span {
@@ -144,7 +144,7 @@ nav a:hover {
 /* Block Two - Keep Practicing */
 #sectiontwo {
 	border: 2px solid maroon;
-	display: flex;
+	display: flex;	
 }
 
 #sectiontwo img {
@@ -187,7 +187,7 @@ nav a:hover {
 	margin-left: 4em;
 	padding-bottom: 2em;
 }
-
+	
 #columntwo .block {
 	display: inline-flex;
 	align-items: center;
@@ -217,7 +217,7 @@ nav a:hover {
 	background-color: #d3d3d3;
 	border: 2px solid blue;
 	display: flex;
-
+	
 }
 
 #allcontainers {
@@ -231,7 +231,7 @@ nav a:hover {
 	background-color: white;
 	margin: 2em 1em;
 	flex-basis: 33%;
-
+	
 }
 
 .container img {
@@ -261,7 +261,7 @@ nav a:hover {
 /* Block Four - Thesis */
 #thesis {
 	border: 2px solid gold;
-	display: flex;
+	display: flex;	
 	flex-direction: column;
 }
 
@@ -272,7 +272,7 @@ nav a:hover {
 
 #allthesiscontainer {
 	display: flex;
-
+	
 }
 
 #thesiscolumnone {
@@ -284,7 +284,7 @@ nav a:hover {
 #thesiscolumnone video {
 	margin: 0em 1.5em;
 	width: 100%;
-
+	
 }
 
 #thesiscolumnone h1  {
@@ -307,7 +307,7 @@ nav a:hover {
 	margin-left: 4em;
 	padding-bottom: 2em;
 }
-
+	
 #thesiscolumntwo .thesiscontainer {
 	display: inline-flex;
 	align-items: center;
@@ -320,7 +320,7 @@ nav a:hover {
 
 .subthesiscontainer {
 	padding: 1em;
-
+	
 }
 #thesiscolumntwo .thesiscontainer:first-child {
 	background-color: #d3d3d3;
@@ -350,87 +350,100 @@ footer ul {
 footer li {
 	margin-right: 1em;
 }
-
-/* General */
 @media (max-width : 480px) {
+/* General */
+
 	.desktop {
 		display: none;
 	}
-
+	
 	.mobile {
 		display: block;
 	}
-}
+
 
 /* Header/Navigation */
-@media (max-width : 480px) {
+
 	header {
 		border: 2px border blue;
-
+		
 	}
 	 #logo, .desktop {
 		display: none;
 	}
-
+	
 	nav.mobile {
 		display: inline-flex;
 		width: 100%;
 	}
-
+	
 	nav.mobile img {
 		display: inline-flex;
 	}
-
+	
 	nav ul {
 		width: 100%;
 		display: flex;
 		justify-content: space-around;
 	}
-}
+
 
 /* Block one - Banner / Jambatron */
-@media (max-width : 480px) {
+
 	#banner {
 		display: flex;
 		flex-direction: column;
 	}
 	#banner img {
-		width: 100%
+		width: 100%;
 	}
-
+	
 	.bannerbutton {
 		margin-bottom: 2em;
 	}
-}
+
 
 /* Block Two - Keep Practicing */
-@media (max-width : 480px) {
+
 	#sectiontwo {
 		display: block;
-
+		
 	}
-
+	
 	#columntwo {
 		margin: 0;
 		width: 100%;
 	}
-
+	
 	#columntwo .block {
 		display: flex;
 		flex-direction: column;
 		border: none;
 		align-items: flex-start;
-
+		
 	}
-
+	
 	#columntwo .block img {
-		width: 100%;
-		margin: 1em;
-
+		width: calc(100% - 3em);
+		margin: 1.5em;
+	
 	}
-
+	
 	#columntwo .subblock {
 		margin-left: 2em;
-
+		margin-bottom: 1em;
+		
 	}
-}
+/* Block Three - Courses */
+	#sectionthree h1 {
+		text-align: center;
+	}
+	
+	#allcontainers {
+		display: block;
+	}
+	
+	.container img {
+		display: block;
+		width: 100%;
+	}
