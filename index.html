@@ -9,12 +9,12 @@
   <!-- Header -->
   <header>
       <div id="logo">
-        <img src ="./resources/images/ic-logo.svg">
+        <img src ="./resources/images/ic-logo.svg" alt="Academy Logo">
         <h1 class="desktop">COLMAR</h1>
         <h2 class="desktop">ACADEMY</h2>
       </div> <!-- close logo-->
     <nav class="desktop">
-      <ul>
+      <ul role="presentation">
         <li><a href="#">On campus</a></li>
         <li><a href="#">Online</a></li>
         <li><a href="#">Our companies</a></li>
@@ -23,63 +23,64 @@
     </nav>
       <nav class="mobile">
           <ul>
-            <li class="oncampus"><a href="#"><img src="./resources/images/ic-logo.svg"><span>On Campus</span></a></li>
-            <li class="companies"><a href="#"><img src="./resources/images/ic-on-campus.svg"><span>Our Companies</span></a></li>
-            <li class="online"><a href="#"><img src="./resources/images/ic-online.svg"><span>Online</span></a></li>
-            <li class="signin"><a href="#"><img src="./resources/images/ic-login.svg"><span>Sign-in</span></a></li>
-      </nav>
+            <li class="oncampus"><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+            <li class="companies"><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+            <li class="online"><a href="#"><img src="./resources/images/ic-online.svg"></li>
+            <li class="signin"><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+  
   </header>
   <!-- Block one / Banner-->
-  <div id="banner">
+  <div id="banner" role="banner">
     
-      <img src="./resources/images/banner.jpg">
+      <img src="./resources/images/banner.jpg" alt="Decorative: Three students engaged in reading and writting on a picnic type talbe and bench outside.">
     
     <div id="jambatron">
       <h1>Learn something new everyday </h1>
 		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-       <div class ="bannerbutton">
+       <div class ="bannerbutton" role="button">
          <span>Start here</span>
       </div> <!-- close bannerbutton -->
+      
     </div> <!-- close jambatron -->
   </div> <!-- close section banner -->
 
   <!-- Block Two /Keep Practicing -->
-  <div id="sectiontwo">
+  <main>
     
     <div id="columnone">
-    	<img  class="desktop" src="./resources/images/information-main.jpg">
-      <h1 class="desktop"> It doesn't hurt to keep practicing </h1>
+    	<img src="./resources/images/information-main.jpg" alt="Decorative: an image of man reading a book in the park."  class="desktop">
+      <h1 class="desktop" role="heading"> It doesn't hurt to keep practicing </h1>
       <p class="desktop">"Curabitur vitae libero in ipsum portitor consequat. Alquam et commodo lectus, net consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula." </p>
-      <p class="caption desktop">Emanuel, Sr. Strategist at Hiring.com</p>
+      <figcaption class="desktop">Emanuel, Sr. Strategist at Hiring.com</figcaption>
     </div> <!-- columnone -->
     <div id="columntwo">
      <div class="block">
-       <img class="desktop" src="./resources/images/information-orientation.jpg">
+       <img src="./resources/images/information-orientation.jpg" alt="Decorative: an image of several students on a walkway" class="desktop">
        <img class="mobile" src="./resources/images/information-orientation-mobile.jpg">
-       <div class="subblock"><h2>Orientation date</h2>
+       <div class="subblock"><h2 role="heading">Orientation date</h2>
        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-       <span><a href="#">Read more</a></span>
+       <span><a role="link" href="#">Read more</a></span>
        </div> <!-- subblock -->
      </div> <!-- block -->
       <div class="block">
-       <img class="desktop" src="./resources/images/information-campus.jpg">
+       <img src="./resources/images/information-campus.jpg" alt="Decorative: an image of students in what looks like a study hall busy working" class="desktop">
        <img class="mobile" src="./resources/images/information-campus-mobile.jpg">
-       <div class="subblock"><h2>Our Campus</h2>
+       <div class="subblock"><h2 role="heading">Our Campus</h2>
         <p>Find Which campus is close by you</p>
-       <span><a href="#">Read more</a></span>
+       <span><a role="link" href="#">Read more</a></span>
        </div> <!-- subblock -->
      </div> <!-- block -->
        
       <div class="block">
-       <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
+       <img src="./resources/images/information-guest-lecture.jpg" alt="Keynote speaker, Oliver Sack" class="desktop">
        <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
-       <div class="subblock"><h2>Our guest lecture</h2>
+       <div class="subblock"><h2 role="heading">Our guest lecture</h2>
         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-       <span><a href="#">Read more</a></span>
+       <span><a role="link" href="#">Read more</a></span>
        </div> <!-- subblock -->
      </div> <!-- block-->
     </div> <!-- columntwo -->
-    </div> <!-- sectiontwo -->
+    </main> <!-- sectiontwo -->
 
   <!-- Block Three / Start learning -->
   <div id="sectionthree">
@@ -87,40 +88,40 @@
    <h1 class="center">Start learning</h1>
     <div class="rowone">
       <div class="container">
-      <img class="desktop" src="./resources/images/course-software.jpg">
-      <h2>Software engineering</h2>
+      <img src="./resources/images/course-software.jpg" alt="Decorative: two computer screens." class="desktop">
+      <h2 role="heading">Software engineering</h2>
       <p class="desktop">COURSES</p>
       <p class="desktop"> Web Development, Mobile Development, iOT, APIs</p>
     </div> <!-- containerone -->
     <div class="container">
-      <img class="desktop" src="resources/images/course-computer-art.jpg">
-      <h2>Computer art</h2>
+      <img src="resources/images/course-computer-art.jpg" alt="Decorative: an image of a hand holding an iphone" class="desktop">
+      <h2 role="heading">Computer art</h2>
       <p class="desktop">COURSES</p>
       <p class="desktop"> Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
     </div> <!-- containertwo -->
       <div class="container">
-      <img class="desktop" src="resources/images/course-design.jpg">
-      <h2>Design</h2>
+      <img src="resources/images/course-design.jpg" alt="Decorative: an image of someone holding a classic photo camera." class="desktop">
+      <h2 role="heading">Design</h2>
       <p class="desktop">COURSES</p>
       <p class="desktop"> User Experience Design, User Reserach Visual Design</p>
     </div> <!-- containerthree -->
     </div> <!-- rowone -->
      <div class="rowtwo">
       <div class="container">
-      <img class="desktop" src="resources/images/course-data.jpg">
-      <h2>Data</h2>
+      <img src="resources/images/course-data.jpg" alt="Decorative: an image of a laptop" class="desktop">
+      <h2 role="heading">Data</h2>
       <p class="desktop">COURSES</p>
       <p class="desktop"> Data Science, Big Data, SQL, Data Visualization</p>
     </div> <!-- containerone -->
     <div class="container">
-      <img class="desktop" src="resources/images/course-business.jpg">
-      <h2>Business</h2>
+      <img src="resources/images/course-business.jpg" alt="Decorative: an image of a chess set" class="desktop">
+      <h2 role="heading">Business</h2>
       <p class="desktop">COURSES</p>
       <p class="desktop"> Product Development, Business Development, Startup</p>
     </div> <!-- containertwo -->
       <div class="container">
-      <img class="desktop" src="resources/images/course-marketing.jpg">
-      <h2 >Marketing</h2>
+      <img src="resources/images/course-marketing.jpg" alt="Decorative: an image of someone checking their smart watch." class="desktop">
+      <h2 role="heading">Marketing</h2>
       <p class="desktop">COURSES</p>
       <p class="desktop"> Analytics, Content Marketing, Mobile Marketing</p>
     </div> <!-- containerthree -->
@@ -135,19 +136,19 @@
     <div id="allthesiscontainer">
     <div id="thesiscolumnone">
     <video controls> <source src="./resources/videos/thesis.mp4">
-    <h1>Reimagine urban</h1>
+    <h1 role="heading">Reimagine urban</h1>
     <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commod lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, trisque  ligula."
     </div> <!-- thesis_columnone -->
       <div id="thesiscolumntwo">
         <div class="thesiscontainer">
-         <img src="./resources/images/thesis-fisma.jpg">
-          <div class="subthesiscontainer"><h2> Fisma: Design and Prototype</h2>
+         <img src="./resources/images/thesis-fisma.jpg" alt="Decorative: an image of worksheets being highlighted on the table.">
+          <div class="subthesiscontainer"><h2 role="heading"> Fisma: Design and Prototype</h2>
           <p> Designer showcase of new prototype product</p>
           </div><!--subthesiscontainer -->
         </div> <!--thesiscontainer_blockone -->
         <div class="thesiscontainer">
-         <img src="./resources/images/thesis-now-and-then.jpg">
-          <div class="subthesiscontainer"><h2> Now and then</h2>
+         <img src="./resources/images/thesis-now-and-then.jpg" alt="Decorative: New York cityscape. ">
+          <div class="subthesiscontainer"><h2 role="heading"> Now and then</h2>
           <p> Research study about New York</p>
         </div><!--subthesiscontainer --></div> <!--thesiscontainer -->
       </div> <!-- thesis columntwo -->
@@ -155,12 +156,12 @@
   </div> <!--thesis-->
     <footer>
       <div class="copyright"><p> &copy; 2016 Colmar Academy. All rights reserved</p></div> <!--copyright-->
-      <div class="footernav">
-        <ul>
+      <nav class="footernav">
+        <ul role="presentation">
           <li>Terms</li>
           <li>Privacy</li>
         </ul>
-      </div><!--footernav-->
+      </nav><!--footernav-->
     </footer>
 </body>
 </html>
