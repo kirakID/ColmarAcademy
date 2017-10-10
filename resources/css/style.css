@@ -144,11 +144,11 @@ nav a:hover {
 
 
 /* Block Two - Keep Practicing */
-#sectiontwo {
+main {
 	display: flex;	
 }
 
-#sectiontwo img {
+main img {
 	margin: 2em 1.5em;
 	width: 100%;
 }
@@ -171,8 +171,8 @@ nav a:hover {
 	padding: 1.5em;
 }
 
-#columnone p.caption {
-	font-family: Helvetica, sans-serif;
+figcaption {
+	margin-left: 1.75em;
 	font-size: 1.25em;
 	padding-top: 0;
 	padding-bottom: 1em;
@@ -369,7 +369,7 @@ footer li {
 	
 	nav.mobile img {
 		display: inline-flex;
-		padding: 2em;
+		padding: 1em;
 	}
 	
 	nav ul {
@@ -378,64 +378,7 @@ footer li {
 		justify-content: flex-end;
 		}
 		
-	.oncampus span {
-			position: absolute; 
-			top: 1em;
-			left: 25em;
-			background-color: #708c78;
-			color: white;
-			opacity: 0;
-		}
 
-
-	.oncampus span:hover {
-			opacity: 1;
-			transition: opacity 1s ease-out;
-		}
-
-	.companies span {
-			position: absolute; 
-			top: 1em;
-			left: 29em;
-			background-color: #708c78;
-			color: white;
-			opacity: 0;
-		}
-
-	.companies span:hover {
-			opacity: 1;
-			transition: opacity 1s ease-out;
-		}
-		
-	.online span {
-			position: absolute; 
-			top: 1em;
-			left: 38em;
-			background-color: #708c78;
-			color: white;
-			opacity: 0;
-		}
-
-	.online span:hover {
-			opacity: 1;
-			transition: opacity 1s ease-out;
-		}
-
-	.signin span {
-			position: absolute; 
-			top: 1em;
-			left: 45em;
-			background-color: #708c78;
-			color: white;
-			opacity: 0;
-		}
-
-	 	.signin span:hover {
-			opacity: 1;
-			transition: opacity 1s ease-out;
-		}
-
-	
 
 /* Block one - Banner / Jambatron */
 
@@ -462,7 +405,7 @@ footer li {
 		width: 100%;
 		}
 	
-	#sectiontwo img {
+	main img {
 			margin: 0;
 		}
 	
@@ -470,7 +413,7 @@ footer li {
 		display: flex;
 		flex-wrap: wrap;
 		}
-	#sectiontwo {
+	main {
 		display: block;
 	}
 	
@@ -589,7 +532,7 @@ footer li {
 
 /* Block Two - Keep Practicing */
 
-	#sectiontwo {
+	main {
 		display: block;
 		
 	}
